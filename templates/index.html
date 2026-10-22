@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logopediepraktijk | Hanneke Lantin</title>
+    <!-- Tailwind CSS via CDN voor snelle, responsieve styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pastel: {
+                            bg: '#F9F8F6',
+                            card: '#FFFFFF',
+                            primary: '#738678', // Rustig saliegroen
+                            secondary: '#E8ECE9',
+                            accent: '#D4DEC2',
+                            text: '#4A5568',
+                            heading: '#2C3E35'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #F9F8F6;
+            color: #4A5568;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+    </style>
+</head>
+<body class="leading-relaxed">
+
+    <!-- Header & Navigatie -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold text-pastel-heading">
+                Praktijk voor Logopedie <span class="block text-sm font-normal text-pastel-primary">Hanneke Lantin</span>
+            </div>
+            <nav class="hidden md:flex space-x-6 text-sm font-medium">
+                <a href="#intro" class="hover:text-pastel-primary transition">Over mij</a>
+                <a href="#specialisaties" class="hover:text-pastel-primary transition">Specialisaties</a>
+                <a href="#opleiding" class="hover:text-pastel-primary transition">Opleiding</a>
+                <a href="#tarieven" class="hover:text-pastel-primary transition">Tarieven</a>
+                <a href="#locatie" class="hover:text-pastel-primary transition">Locatie</a>
+                <a href="#contact" class="hover:text-pastel-primary transition">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Intro / Hero Sectie -->
+    <section id="intro" class="py-16 md:py-24 max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+        <div>
+            <span class="inline-block bg-pastel-secondary text-pastel-heading px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider mb-4">Persoonlijke & Professionele Zorg</span>
+            <h1 class="text-4xl md:text-5xl font-bold text-pastel-heading mb-6 leading-tight">Elke stem telt, elk woord begint bij communicatie.</h1>
+            <p class="text-lg mb-8">Welkom bij de logopediepraktijk. Met een persoonlijke en warme aanpak begeleid ik zowel kinderen als volwassenen naar een beter zelfvertrouwen in communicatie en mondgezondheid.</p>
+            <div class="flex space-x-4">
+                <a href="#contact" class="bg-pastel-primary text-white px-6 py-3 rounded-lg font-medium shadow hover:bg-opacity-90 transition">Maak een afspraak</a>
+                <a href="#specialisaties" class="border border-pastel-primary text-pastel-primary px-6 py-3 rounded-lg font-medium hover:bg-pastel-secondary transition">Ontdek specialisaties</a>
+            </div>
+        </div>
+        <div class="bg-pastel-secondary rounded-2xl h-80 flex flex-col items-center justify-center text-center p-6 border-2 border-dashed border-pastel-accent">
+            <!-- Placeholder voor afbeelding -->
+            <svg class="w-16 h-16 text-pastel-primary mb-3" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"></path></svg>
+            <span class="text-sm font-medium text-pastel-heading">[ Placeholder: Portretfoto Hanneke of Praktijkruimte ]</span>
+            <span class="text-xs text-gray-500 mt-1">Voeg hier later je eigen foto toe</span>
+        </div>
+    </section>
+
+    <!-- Specialisaties -->
+    <section id="specialisaties" class="bg-white py-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-pastel-heading mb-4">Mijn Specialisaties</h2>
+                <p class="text-gray-600">Gerichte en deskundige begeleiding afgestemd op jouw specifieke hulpvraag.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Specialisatie 1 -->
+                <div class="bg-pastel-bg p-8 rounded-2xl border border-pastel-secondary">
+                    <div class="w-12 h-12 bg-pastel-accent rounded-xl flex items-center justify-center text-pastel-heading font-bold mb-6 text-xl">👶</div>
+                    <h3 class="text-xl font-bold text-pastel-heading mb-3">Kinderlogopedie</h3>
+                    <p class="text-gray-600 mb-4">Spelenderwijs werken we aan taalontwikkeling, articulatie, afwijkende mondgewoonten (zoals duimzuigen of open mondgedrag) en leerstoornissen. Een veilige en speelse omgeving staat hierbij centraal.</p>
+                    <ul class="text-sm space-y-2 text-pastel-heading font-medium">
+                        <li>✓ Spraak- en taalstoornissen</li>
+                        <li>✓ Artikulatielessen</li>
+                        <li>✓ Myofunctionele therapie (OMT)</li>
+                    </ul>
+                </div>
+                <!-- Specialisatie 2 -->
+                <div class="bg-pastel-bg p-8 rounded-2xl border border-pastel-secondary">
+                    <div class="w-12 h-12 bg-pastel-accent rounded-xl flex items-center justify-center text-pastel-heading font-bold mb-6 text-xl">💧</div>
+                    <h3 class="text-xl font-bold text-pastel-heading mb-3">Slikstoornissen (Disfagie)</h3>
+                    <p class="text-gray-600 mb-4">Diagnostiek en behandeling van slikproblemen bij volwassenen en ouderen, vaak ten gevolge van een neurologische aandoening, ouderdom of operatie. Veiligheid en levenskwaliteit tijdens het eten en drinken staan voorop.</p>
+                    <ul class="text-sm space-y-2 text-pastel-heading font-medium">
+                        <li>✓ Slikrevalidatie & advies</li>
+                        <li>✓ Aanpassing consistenties</li>
+                        <li>✓ Samenwerking met artsen/diëtisten</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Opleiding & Achtergrond -->
+    <section id="opleiding" class="py-20 max-w-6xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="bg-pastel-secondary rounded-2xl h-72 flex flex-col items-center justify-center text-center p-6 border-2 border-dashed border-pastel-accent">
+                <!-- Placeholder voor afbeelding -->
+                <svg class="w-16 h-16 text-pastel-primary mb-3" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"></path></svg>
+                <span class="text-sm font-medium text-pastel-heading">[ Placeholder: Sfeerfoto / Studie / Certificaten ]</span>
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold text-pastel-heading mb-4">Over Opleiding & Ervaring</h2>
+                <p class="text-gray-600 mb-4">Als gediplomeerd logopediste blijf ik mij continu bijscholen om behandelingen volgens de nieuwste wetenschappelijke inzichten te kunnen aanbieden.</p>
+                <div class="space-y-4 text-sm">
+                    <div class="bg-white p-4 rounded-xl border border-pastel-secondary shadow-sm">
+                        <span class="font-bold text-pastel-heading block">Bachelor in de Logopedie</span>
+                        <span class="text-gray-500">Hogeschool / Universiteit (Afstudeerjaar)</span>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl border border-pastel-secondary shadow-sm">
+                        <span class="font-bold text-pastel-heading block">Bijkomende Specialisaties & Cursussen</span>
+                        <span class="text-gray-500">O.a. Slikstoornissen bij volwassenen, OMT (Myofunctionele therapie)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tarieven -->
+    <section id="tarieven" class="bg-white py-20">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-pastel-heading mb-4">Tarieven & Vergoedingen</h2>
+                <p class="text-gray-600">Transparante tarieven conform de wettelijke richtlijnen voor geconventioneerde logopedie.</p>
+            </div>
+            <div class="overflow-x-auto shadow-sm rounded-2xl border border-pastel-secondary">
+                <table class="w-full text-left border-collapse bg-pastel-bg">
+                    <thead>
+                        <tr class="bg-pastel-secondary text-pastel-heading text-sm uppercase tracking-wider">
+                            <th class="p-4 font-semibold">Onderzoek / Behandeling</th>
+                            <th class="p-4 font-semibold">Duur</th>
+                            <th class="p-4 font-semibold">Tarief</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-pastel-secondary text-sm">
+                        <tr class="hover:bg-white transition">
+                            <td class="p-4 font-medium text-pastel-heading">Logopedisch onderzoek (intake + verslag)</td>
+                            <td class="p-4 text-gray-600">60 min</td>
+                            <td class="p-4 text-pastel-primary font-bold">€ 75,00</td>
+                        </tr>
+                        <tr class="hover:bg-white transition">
+                            <td class="p-4 font-medium text-pastel-heading">Individuele therapiezitting</td>
+                            <td class="p-4 text-gray-600">30 min</td>
+                            <td class="p-4 text-pastel-primary font-bold">€ 35,00</td>
+                        </tr>
+                        <tr class="hover:bg-white transition">
+                            <td class="p-4 font-medium text-pastel-heading">Individuele therapiezitting (lange sessie)</td>
+                            <td class="p-4 text-gray-600">60 min</td>
+                            <td class="p-4 text-pastel-primary font-bold">€ 70,00</td>
+                        </tr>
+                        <tr class="hover:bg-white transition">
+                            <td class="p-4 font-medium text-pastel-heading">Multidisciplinair overleg / Schoolbezoek</td>
+                            <td class="p-4 text-gray-600">Per uur</td>
+                            <td class="p-4 text-pastel-primary font-bold">€ 60,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="text-xs text-gray-500 mt-4 text-center">* Terugbetaling via het ziekenfonds (RIZIV) is mogelijk mits een voorschrift van een arts en een goedkeuring van de adviserend geneesheer.</p>
+        </div>
+    </section>
+
+    <!-- Locatie -->
+    <section id="locatie" class="py-20 max-w-6xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-bold text-pastel-heading mb-4">Praktijklocatie</h2>
+                <p class="text-gray-600 mb-6">De praktijk is rustig gelegen en vlot bereikbaar met voldoende parkeergelegenheid in de buurt.</p>
+                <div class="space-y-3 text-sm">
+                    <p class="flex items-center">📍 <strong class="ml-2">Adres:</strong> Voorbeeldstraat 123, 2000 Antwerpen</p>
+                    <p class="flex items-center">📞 <strong class="ml-2">Telefoon:</strong> +32 (0)3 123 45 67</p>
+                    <p class="flex items-center">✉️ <strong class="ml-2">E-mail:</strong> info@hannekelantin-logopedie.be</p>
+                </div>
+            </div>
+            <div class="bg-pastel-secondary rounded-2xl h-72 flex flex-col items-center justify-center text-center p-6 border-2 border-dashed border-pastel-accent">
+                <!-- Placeholder voor kaart / foto praktijk -->
+                <svg class="w-16 h-16 text-pastel-primary mb-3" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.5.5h3.75m-16.5 0h16.5M3.75 6.75h16.5A2.25 2.25 0 0122.5 9v9A2.25 2.25 0 0120.25 20.25H3.75A2.25 2.25 0 011.5 18V9A2.25 2.25 0 013.75 6.75z"></path></svg>
+                <span class="text-sm font-medium text-pastel-heading">[ Placeholder: Kaart / Plattegrond of Buitenkant Pand ]</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Formulier met mailto -->
+    <section id="contact" class="bg-white py-20">
+        <div class="max-w-2xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-pastel-heading mb-4">Neem contact op</h2>
+                <p class="text-gray-600">Heb je een vraag of wil je een afspraak maken? Vul het formulier hieronder in en het opent direct je e-mailprogramma.</p>
+            </div>
+            <form onsubmit="sendMail(event)" class="bg-pastel-bg p-8 rounded-2xl border border-pastel-secondary shadow-sm space-y-6">
+                <div>
+                    <label class="block text-sm font-medium text-pastel-heading mb-2">Jouw Naam</label>
+                    <input type="text" id="name" required class="w-full px-4 py-3 rounded-lg border border-pastel-secondary bg-white focus:outline-none focus:ring-2 focus:ring-pastel-primary">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-pastel-heading mb-2">E-mailadres</label>
+                    <input type="email" id="email" required class="w-full px-4 py-3 rounded-lg border border-pastel-secondary bg-white focus:outline-none focus:ring-2 focus:ring-pastel-primary">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-pastel-heading mb-2">Onderwerp / Vraag</label>
+                    <select id="subject" class="w-full px-4 py-3 rounded-lg border border-pastel-secondary bg-white focus:outline-none focus:ring-2 focus:ring-pastel-primary">
+                        <option value="Algemene vraag">Algemene vraag</option>
+                        <option value="Kinderlogopedie">Kinderlogopedie</option>
+                        <option value="Slikstoornissen">Slikstoornissen</option>
+                        <option value="Afspraak maken">Afspraak maken</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-pastel-heading mb-2">Je bericht</label>
+                    <textarea id="message" rows="4" required class="w-full px-4 py-3 rounded-lg border border-pastel-secondary bg-white focus:outline-none focus:ring-2 focus:ring-pastel-primary"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-pastel-primary text-white py-3 rounded-lg font-medium shadow hover:bg-opacity-90 transition">Verstuur Bericht via E-mail</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center text-xs text-gray-500 bg-pastel-bg border-t border-pastel-secondary">
+        <p>&copy; 2026 Hanneke Lantin - Logopediepraktijk. Alle rechten voorbehouden.</p>
+    </footer>
+
+    <!-- Script voor Mailto functionaliteit -->
+    <script>
+        function sendMail(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+
+            const mailtoLink = `mailto:info@hannekelantin-logopedie.be?subject=${encodeURIComponent(subject + ' - ' + name)}&body=${encodeURIComponent("Naam: " + name + "\nE-mail: " + email + "\n\nBericht:\n" + message)}`;
+            window.location.href = mailtoLink;
+        }
+    </script>
+</body>
+</html>
